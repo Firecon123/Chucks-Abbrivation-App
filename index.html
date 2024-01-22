@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Name Helper</title>
+    <header>Name Selector</header>
+    <label for="attribute_1">Select Product Type:</label>
+    <select id="opts" onchange="showForm()">
+        <option value="0">Select Options</option>
+        <option value="1">Yogurt</option>
+        <option value="2">Fluid 2</option>
+    </select>
+</head>
+<body>
+    <div id="f1" style="display:none">
+        <form name="form1">
+            <label class="drop-down">
+                <label for="attribute_1">Select Size:</label>
+                <select name="attribute_1" id="attribute_1" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="4.4OZ">4.4 OZ</option>
+                    <option value="4OZ">4 OZ</option>
+                    <option value="5OZ">5 OZ</option>
+                    <option value="5.3OZ">5.3 OZ</option>
+                    <option value="6OZ">6 OZ</option>
+                    <option value="8OZ">8 OZ</option>
+                    <option value="16OZ">16 OZ</option>
+                    <option value="21.2OZ">21.2 OZ</option>
+                    <option value="24OZ">24 OZ</option>
+                    <option value="32OZ">32 OZ</option>
+                    <option value="40OZ">40 OZ</option>
+                    <option value="48OZ">48 OZ</option>
+                    <option value="63.6OZ">62.6 OZ</option>
+                    <option value="64OZ">64 OZ</option>
+                    <option value="72OZ">72 OZ</option>
+                </select>
+                <label for="attribute_2">Select Brand Name:</label>
+                <select name="attribute_2" id="attribute_2" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="BLNDZ">BLNDZ</option>
+                    <option value="B&B">Bowl and Basket</option>
+                    <option value="DRIFT">Driftwood</option>
+                    <option value="EXCRMY">Extra Creamy</option>
+                    <option value="FNF">Fit N Free</option>
+                    <option value="FRFM">Friendly Farms</option>
+                    <option value="GV">Givat</option>
+                    <option value="G&G">Good & Gather</option>
+                    <option value="HEB">HEB</option>
+                    <option value="J&J">J&J</option>
+                    <option value="KRIMI">KRIMI</option>
+                    <option value="KRSP">Krispy</option>
+                    <option value="MEHD">Mehadrin</option>
+                    <option value="MEHDLB">Mehadrin Leben</option>
+                    <option value="MM">Member's Mark</option>
+                    <option value="NP">Nature's Promise</option>
+                    <option value="OP">Open Nature</option>
+                    <option value="PNRA">Panera</option>
+                    <option value="SP">Simply Nature</option>
+                    <option value="SM">Smoothie King</option>
+                    <option value="TOPS">Tops</option>
+                    <option value="SKYR">Traditional SKYR</option>
+                    <option value="TR">True Goodness</option>
+                    <option value="UpFarms">Upstate Farms</option>
+                    <option value="WEG">Wegmans</option>
+                </select>
+                <label for="attribute_3">Select Type:</label>
+                <select name="attribute_3" id="attribute_3" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="BLND">Blended</option>
+                    <option value="CPS">Cupset</option>
+                    <option value="CPSFOB">Cupset FOB</option>
+                    <option value="GRK">Greek</option>
+                    <option value="GRKBLND">Greek Blended</option>
+                    <option value="GRKFOB">Greek FOB</option>
+                    <option value="GRKLS">Greek Less Sugar</option>
+                    <option value="ORG">Organic</option>
+                    <option value="ORGCPS">Organic Cupset</option>
+                    <option value="ORGGRK">Organic Greek</option>
+                    <option value="TRAD">Traditional</option>
+                </select>
+                <label for="attribute_4">Select Description:</label>
+                <select name="attribute_4" id="attribute_4" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="NF">Non-Fat</option>
+                    <option value="WM">With Milk</option>
+                </select>
+                <label for="attribute_5">Select Flavor:</label>
+                <select name="attribute_5" id="attribute_5" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="five_2">Banana Vanilla</option>
+                    <option value="five_3">Berry Medley</option>
+                    <option value="five_4">Berry Pomegranate</option>
+                    <option value="five_2">Black Cherry</option>
+                    <option value="five_3">Black Berry</option>
+                    <option value="five_4">E4</option>
+                    <option value="five_2">E2</option>
+                    <option value="five_3">E3</option>
+                    <option value="five_4">E4</option>
+                    <option value="five_2">E2</option>
+                    <option value="five_3">E3</option>
+                    <option value="five_4">E4</option>
+                    <option value="five_2">E2</option>
+                    <option value="five_3">E3</option>
+                    <option value="five_4">E4</option>
+                </select>
+                <label for="attribute_6">Select sixth _____:</label>
+                <select name="attribute_6" id="attribute_6" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="six_1">F1</option>
+                    <option value="six_2">F2</option>
+                    <option value="six_3">F3</option>
+                    <option value="six_4">F4</option>
+                </select>
+                <label for="attribute_7">Select seventh_____:</label>
+                <select name="attribute_7" id="attribute_7" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="seven_1">G1</option>
+                    <option value="seven_2">G2</option>
+                    <option value="seven_3">G3</option>
+                    <option value="seven_4">G4</option>
+                </select>
+            </label>
+        </form>
+    </div>
+    <div id="f2" style="display:none">
+        <form name="form2">
+            <label class="drop-down">
+                <label for="attribute_1">Select first _____:</label>
+                <select name="attribute_1" id="attribute_1" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="one_1">A1</option>
+                    <option value="one_2">A2</option>
+                    <option value="one_3">A3</option>
+                    <option value="one_4">A4</option>
+                </select>
+                <label for="attribute_2">Select second _____:</label>
+                <select name="attribute_2" id="attribute_2" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="two_1">B1</option>
+                    <option value="two_2">B2</option>
+                    <option value="two_3">B3</option>
+                    <option value="two_4">B4</option>
+                </select>
+                <label for="attribute_3">Select third _____:</label>
+                <select name="attribute_3" id="attribute_3" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="three_1">C1</option>
+                    <option value="three_2">C2</option>
+                    <option value="three_3">C3</option>
+                    <option value="three_4">C4</option>
+                </select>
+                <label for="attribute_4">Select fourth _____:</label>
+                <select name="attribute_4" id="attribute_4" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="four_1">D1</option>
+                    <option value="four_2">D2</option>
+                    <option value="four_3">D3</option>
+                    <option value="four_4">D4</option>
+                </select>
+                <label for="attribute_5">Select fifth _____:</label>
+                <select name="attribute_5" id="attribute_5" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="five_1">E1</option>
+                    <option value="five_2">E2</option>
+                    <option value="five_3">E3</option>
+                    <option value="five_4">E4</option>
+                </select>
+                <label for="attribute_6">Select sixth _____:</label>
+                <select name="attribute_6" id="attribute_6" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="six_1">F1</option>
+                    <option value="six_2">F2</option>
+                    <option value="six_3">F3</option>
+                    <option value="six_4">F4</option>
+                </select>
+                <label for="attribute_7">Select seventh_____:</label>
+                <select name="attribute_7" id="attribute_7" onchange="updateResult()">
+                    <option value="">None</option>
+                    <option value="seven_1">G1</option>
+                    <option value="seven_2">G2</option>
+                    <option value="seven_3">G3</option>
+                    <option value="seven_4">G4</option>
+                </select>
+            </label>
+        </form>
+    </div>
+    <div class="result" id="result">Selected Name: </div>
+    <script src="generator.js"></script>
+</body>
+</html>
