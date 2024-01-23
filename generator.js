@@ -1,3 +1,8 @@
+//Character Limit is 60 per box, 2 separate description boxes
+
+
+
+
 function updateResultYogurt() {
     const attribute1 = document.getElementById("size_yogurt").value;
     const attribute2 = document.getElementById("name_yogurt").value;
