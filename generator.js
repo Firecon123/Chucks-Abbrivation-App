@@ -21,81 +21,81 @@ let adjectives = new Map([
     ["5LB", "5LB"],
     ["32LB", "32LB"],
     ["BLNDZ", "BLNDZ"],
-    ["BOWL AND BASKET", "B&B"],
+    ["BOWL_AND_BASKET", "B&B"],
     ["BISON", "BISON"],
     ["DRIFTWOOD", "DRIFT"],
-    ["EXTRA CREAMY", "EXCRMY"],
-    ["FIT N FREE", "FNF"],
-    ["FRIENDLY FARMS", "FRFM"],
+    ["EXTRA_CREAMY", "EXCRMY"],
+    ["FIT_N_FREE", "FNF"],
+    ["FRIENDLY_FARMS", "FRFM"],
     ["GIVAT", "GIV"],
-    ["GOOD & GATHER", "G&G"],
-    ["GREAT VALUE", "GV"],
+    ["GOOD_&_GATHER", "G&G"],
+    ["GREAT_VALUE", "GV"],
     ["HEB", "HEB"],
     ["J&J", "J&J"],
     ["KRIMI", "KRIMI"],
     ["KRISPY", "KRSP"],
     ["MEHADRIN", "MEHD"],
-    ["MEHADRIN LEBEN", "MEHDLB"],
-    ["MEMBER'S MARK", "MM"],
-    ["NATURE'S PROMISE", "NP"],
-    ["OPEN NATURE", "ON"],
+    ["MEHADRIN_LEBEN", "MEHDLB"],
+    ["MEMBER'S_MARK", "MM"],
+    ["NATURE'S_PROMISE", "NP"],
+    ["OPEN_NATURE", "ON"],
     ["PANERA", "PNRA"],
-    ["SIMPLY NATURE", "SP"],
-    ["SMOOTHIE KING", "SK"],
+    ["SIMPLY_NATURE", "SP"],
+    ["SMOOTHIE_KING", "SK"],
     ["TOPS", "TOPS"],
-    ["TRADITIONAL SKYR", "SKYR"],
-    ["TRUE GOODNESS", "TG"],
-    ["UPSTATE FARMS", "UPFARMS"],
+    ["TRADITIONAL_SKYR", "SKYR"],
+    ["TRUE_GOODNESS", "TG"],
+    ["UPSTATE_FARMS", "UPFARMS"],
     ["WEGMANS", "WEG"],
     ["BLENDED", "BLND"],
     ["CUPSET", "CPS"],
-    ["CUPSET FOB", "CPSFOB"],
+    ["CUPSET_FOB", "CPSFOB"],
     ["GREEK", "GRK"],
-    ["GREEK BLENDED", "GRKBLND"],
-    ["GREEK FOB", "GRKFOB"],
-    ["GREEK LESS SUGAR", "GRKLS"],
+    ["GREEK_BLENDED", "GRKBLND"],
+    ["GREEK_FOB", "GRKFOB"],
+    ["GREEK_LESS SUGAR", "GRKLS"],
     ["ORGANIC", "ORG"],
-    ["ORGANIC CUPSET", "ORGCPS"],
-    ["ORGANIC GREEK", "ORGGRK"],
+    ["ORGANIC_CUPSET", "ORGCPS"],
+    ["ORGANIC_GREEK", "ORGGRK"],
     ["TRADITIONAL", "TRAD"],
     ["NON-FAT", "NF"],
     ["LOW-FAT", "LF"],
-    ["SMALL CURD", "SMLCRD"],
-    ["LARGE CURD", "LRGCRD"],
-    ["WITH MILK", "WM"],
+    ["SMALL_CURD", "SMLCRD"],
+    ["LARGE_CURD", "LRGCRD"],
+    ["WITH_MILK", "WM"],
     ["1%", "1%"],
     ["2%", "2%"],
     ["4%", "4%"],
-    ["BANANA VANILLA", "BANVAN"],
-    ["BERRY MEDLEY", "BERMED"],
-    ["BERRY POMEGRANATE", "BERPOM"],
-    ["BLACK CHERRY", "BLKCRY"],
-    ["BLACK BERRY", "BLKBER"],
-    ["BLACK BOYSENBERRY", "BLKBYSBER"],
+    ["BANANA_VANILLA", "BANVAN"],
+    ["BERRY_MEDLEY", "BERMED"],
+    ["BERRY_POMEGRANATE", "BERPOM"],
+    ["BLACK_CHERRY", "BLKCRY"],
+    ["BLACK_BERRY", "BLKBER"],
+    ["BLACK_BOYSENBERRY", "BLKBYSBER"],
     ["BLUE / BILBERRY", "BLU/BILBER"],
     ["BLUEBERRY", "BLUBER"],
-    ["BUTTER BERRY", "BUTBER"],
+    ["BUTTER_BERRY", "BUTBER"],
     ["CAPPUCCINO", "CAP"],
-    ["CHERRY BLACK CURRANT", "CRYBLKCUR"],
-    ["CHERRY VANILLA", "CRYVAN"],
+    ["CHERRY_BLACK_CURRANT", "CRYBLKCUR"],
+    ["CHERRY_VANILLA", "CRYVAN"],
     ["CHOCOLATE", "CHOC"],
     ["COCONUT", "COCO"],
     ["COFFEE", "COF"],
     ["COOKIE", "CKIE"],
-    ["FIELD BERRY", "FLDBER"],
+    ["FIELD_BERRY", "FLDBER"],
     ["HONEY", "HNY"],
-    ["HONEY & APRICOT", "HNY&APR"],
-    ["HONEY VANILLA", "HNYVAN"],
-    ["KEY LIME", "KEYLIM"],
+    ["HONEY_&_APRICOT", "HNY&APR"],
+    ["HONEY_VANILLA", "HNYVAN"],
+    ["KEY_LIME", "KEYLIM"],
     ["LEMON", "LEM"],
     ["LIME", "LIM"],
-    ["MIXED BERRY", "MIXBER"],
+    ["MIXED_BERRY", "MIXBER"],
     ["MOCHACCINO", "MOCH"],
-    ["ORANGE CREAM", "ORNGCRM"],
+    ["ORANGE_CREAM", "ORNGCRM"],
     ["ONION", "ONION"],
-    ["PASSIONFRUIT MANGO", "PASFRUMGO"],
+    ["PASSIONFRUIT_MANGO", "PASFRUMGO"],
     ["PEACH", "PCH"],
-    ["PEACH CLOUDBERRY", "PCHCLDBER"],
+    ["PEACH_CLOUDBERRY", "PCHCLDBER"],
     ["PINACOLADA", "PINCLDA"],
     ["PINEAPPLE", "PNAPLE"],
     ["PLAIN", "PLN"],
@@ -103,14 +103,14 @@ let adjectives = new Map([
     ["PUMPKIN", "PMKN"],
     ["RASPBERRY", "RSPBER"],
     ["STRAWBERRY", "STRBER"],
-    ["STRAWBERRY BANANA", "STRBERBAN"],
-    ["STRAWBERRY LINGONBERRY", "STRLNGBER"],
-    ["TRIPLE BERRY", "TRIBER"],
-    ["VANILLA HAZELNUT", "VANHAZ"],
-    ["VANILLA OATS", "VANOAT"],
-    ["VANILLA RAINBOW", "VANRNB"],
+    ["STRAWBERRY_BANANA", "STRBERBAN"],
+    ["STRAWBERRY_LINGONBERRY", "STRLNGBER"],
+    ["TRIPLE_BERRY", "TRIBER"],
+    ["VANILLA_HAZELNUT", "VANHAZ"],
+    ["VANILLA_OATS", "VANOAT"],
+    ["VANILLA_RAINBOW", "VANRNB"],
     ["VANILLA", "VAN"],
-    ["VANILLA MAPLE", "VANMAP"],
+    ["VANILLA_MAPLE", "VANMAP"],
     ["VARIETY", "VAR"],
     ["VIENNESE", "VSE"]
 ]);
@@ -164,29 +164,19 @@ function updateResultSour() {
     document.getElementById("result").innerText = "Selected Name: " + selectedName;
 }
 
-function buildName(attribute1, attribute2, attribute3, attribute4, attribute5, attribute6, attribute7) {
-    var fullName = attribute1 + " " + attribute2 + " " + attribute3 + " " + attribute4 + " " + attribute5 + " " + attribute6 + " " + attribute7;
-    if (fullName.length <= 60) {
-        return fullName;
-    } else {
-        let maxWord = findLongestWord(fullName);
-        let replacementWord;
-        if (attribute1.localeCompare(maxWord) == 0) {
-            return buildName(adjectives.get(attribute1), attribute2, attribute3, attribute4, attribute5, attribute6, attribute7);
-        } else if (attribute2.localeCompare(maxWord) == 0) {
-            return buildName(attribute1, adjectives.get(attribute2), attribute3, attribute4, attribute5, attribute6, attribute7);
-        } else if (attribute3.localeCompare(maxWord) == 0) {
-            return buildName(attribute1, attribute2, adjectives.get(attribute3), attribute4, attribute5, attribute6, attribute7);
-        } else if (attribute4.localeCompare(maxWord) == 0) {
-            return buildName(attribute1, attribute2, attribute3, adjectives.get(attribute4), attribute5, attribute6, attribute7);
-        } else if (attribute5.localeCompare(maxWord) == 0) {
-            return buildName(attribute1, attribute2, attribute3, attribute4, adjectives.get(attribute5), attribute6, attribute7);
-        } else if (attribute6.localeCompare(maxWord) == 0) {
-            return buildName(attribute1, attribute2, attribute3, attribute4, attribute5, adjectives.get(attribute6), attribute7);
-        } else if (attribute7.localeCompare(maxWord) == 0) {
-            return buildName(attribute1, attribute2, attribute3, attribute4, attribute5, attribute6, adjectives.get(attribute7));
+function buildName(...attributes) {
+    let fullName = attributes.filter(attribute => attribute).join(" ");
+
+    while (fullName.length > 60) {
+        const maxWord = findLongestWord(fullName);
+        const abbreviation = adjectives.get(maxWord);
+
+        if (abbreviation) {
+            fullName = fullName.replace(maxWord, abbreviation);
         }
     }
+
+    return fullName;
 }
 function findLongestWord(str) {
     const splStrArray = str.split(' ');
