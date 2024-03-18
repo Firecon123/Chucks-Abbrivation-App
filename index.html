@@ -8,7 +8,14 @@
     <script src="path/to/select2.min.js"></script>
     <title>Name Helper</title>
     <header>Name Descriptor</header>
+    <button id="popupButton">Add Something New</button>
     <label for="attribute_1">Select Product Type:</label>
+      <!-- <div class="add_new">
+    <label for="user_added_name">Add Your Name:</label>
+        <input type="text" id="user_added_name" maxlength="60">
+        <button onclick="addUserAddedName()">Add Name</button>
+    </div> -->
+
     <select id="opts" onchange="showForm()">
         <option value="0">Select Options</option>
         <option value="1">Yogurt</option>
@@ -19,13 +26,22 @@
     </select>
 </head>
 <body>
+    <div class="popup-container" id="popupContainer">
+        <label for="abbreviationInput">abbreviation:</label>
+        <input type="abbreviation" id="abbreviationInput">
+
+        <label for="fullNameInput">Full Name:</label>
+        <input type="fullName" id="fullNameInput">
+
+        <button id="closePopup">Add</button>
+    </div>
     <div id="f1" style="display:none">
         <form name="Yogurt">
             <label class="drop-down">
                 <label for="attribute_1">Select Size:</label>
                 <select name="attribute_1" id="size_yogurt" class="select2" onchange="updateResultYogurt()">
                     <option value="">None</option>
-                    <option class="yogurt_size_add"value="">+Add Something New</option>
+                    <!-- <option class="yogurt_size_add"value="">+Add Something New</option> -->
                     <option value="4.4OZ">4.4 OZ</option>
                     <option value="4OZ">4 OZ</option>
                     <option value="5OZ">5 OZ</option>

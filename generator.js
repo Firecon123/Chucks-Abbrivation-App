@@ -190,6 +190,7 @@ function findLongestWord(str) {
    return longestWord
   }
 
+
 function showForm() {
     document.getElementById("result").innerText = "Selected Name: ";
     var selopt = document.getElementById("opts").value;
@@ -236,6 +237,31 @@ function showForm() {
         document.getElementById("f5").style.display = "none";
     }
 }
+const popupButton = document.getElementById('popupButton');
+        const popupContainer = document.getElementById('popupContainer');
+        const closePopup = document.getElementById('closePopup');
+        const overlay = document.getElementById('overlay');
+
+        // Function to show the popup
+        function showPopup() {
+            popupContainer.style.display = 'flex';
+            overlay.style.display = 'flex';
+        }
+
+        // Function to hide the popup
+        function hidePopup() {
+            popupContainer.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+
+        // Event listener for the popup button
+        popupButton.addEventListener('click', showPopup);
+
+        // Event listener for the close button
+        closePopup.addEventListener('click', hidePopup);
+
+        // Event listener for the overlay (to close the popup when clicked outside)
+        overlay.addEventListener('click', hidePopup);
 
 
 
