@@ -238,30 +238,143 @@ function showForm() {
     }
 }
 const popupButton = document.getElementById('popupButton');
-        const popupContainer = document.getElementById('popupContainer');
-        const closePopup = document.getElementById('closePopup');
-        const overlay = document.getElementById('overlay');
+const popupContainer = document.getElementById('popupContainer');
+const closePopup = document.getElementById('closePopup');
+const exitPopup = document.getElementById('exitPopup');
+const abbreviationInput = document.getElementById('abbreviationInput');
+const fullNameInput = document.getElementById('fullNameInput');
 
-        // Function to show the popup
-        function showPopup() {
-            popupContainer.style.display = 'flex';
-            overlay.style.display = 'flex';
-        }
+// Function to show the popup
+function showPopup() {
+    popupContainer.style.display = 'flex';
+    overlay = document.createElement('div'); 
+    overlay.id = 'overlay';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; 
+    overlay.style.zIndex = '999'; 
+    document.body.appendChild(overlay); 
+}
 
-        // Function to hide the popup
-        function hidePopup() {
-            popupContainer.style.display = 'none';
-            overlay.style.display = 'none';
-        }
+// Function to hide the popup
+function hidePopup() {
+    popupContainer.style.display = 'none';
+    if (overlay) {
+        overlay.remove(); // Remove overlay if it exists
+        overlay = null; // Reset overlay variable
+    }
+}
 
-        // Event listener for the popup button
-        popupButton.addEventListener('click', showPopup);
 
-        // Event listener for the close button
-        closePopup.addEventListener('click', hidePopup);
+function addNewItem() {
+    const abbreviation = abbreviationInput.value.trim();
+    const fullName = fullNameInput.value.trim();
 
-        // Event listener for the overlay (to close the popup when clicked outside)
-        overlay.addEventListener('click', hidePopup);
+    if (abbreviation != '' && fullName != '' && !adjectives.has(fullName)) {
+        adjectives.set(fullName, abbreviation);
 
+        abbreviationInput.value = '';
+        fullNameInput.value = '';
+
+        hidePopup();
+
+    } else {
+        alert('Please fill in both fields.');
+    }
+}
+
+popupButton.addEventListener('click', showPopup);
+
+closePopup.addEventListener('click', addNewItem); 
+exitPopup.addEventListener('click', hidePopup);
+
+
+function copyToClipboard() {
+    const resultTextElement = document.getElementById("result");
+    const resultText = resultTextElement.textContent.trim();
+    const selectedName = resultText.replace("Selected Name: ", "");
+
+    const textarea = document.createElement('textarea');
+    textarea.value = selectedName;
+
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(textarea);
+
+    alert('Text copied to clipboard!');
+}
+function showTable(){
+    document.getElementById("tableContainer").style.display = "flex";
+}
+
+function generateTable(){
+    let size = document.getElementById("size_yogurt").value +
+    document.getElementById("size_cottage").value +
+    document.getElementById("size_dip").value +
+    document.getElementById("size_sour").value;
+
+let name = document.getElementById("name_yogurt").value +
+    document.getElementById("name_cottage").value +
+    document.getElementById("name_dip").value +
+    document.getElementById("name_sour").value;
+
+let type = document.getElementById("type_yogurt").value +
+    document.getElementById("type_cottage").value +
+    document.getElementById("lite_sour").value;
+
+let desc = document.getElementById("desc_yogurt").value +
+    document.getElementById("percent_cottage").value;
+
+let flavor = document.getElementById("flavor_yogurt").value +
+      document.getElementById("flavor_cottage").value +
+      document.getElementById("flavor_dip").value +
+      document.getElementById("flavor_sour").value;
+
+    showTable();
+
+    const selectedName = buildName(size, name, type, desc, flavor, "", "");
+
+    let table = document.getElementById("tableContainer"); 
+    let newRow = table.insertRow(table.rows.length); 
+
+    newRow.insertCell(0).innerHTML = size; 
+    newRow.insertCell(1).innerHTML = name; 
+    newRow.insertCell(2).innerHTML = type; 
+    newRow.insertCell(3).innerHTML = desc; 
+    newRow.insertCell(4).innerHTML = flavor; 
+    newRow.insertCell(5).innerHTML = selectedName; 
+}
+function copyToListClipboard(){
+    const table = document.getElementById("tableContainer");
+            let excelData = '';
+
+            const rows = table.querySelectorAll("tr");
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                row.querySelectorAll("td").forEach(cell => {
+                    excelData += cell.textContent + '\t';
+                });
+                if (i < rows.length - 1) {
+                    excelData += '\n';
+                }
+            }
+
+            const textarea = document.createElement("textarea");
+            textarea.value = excelData;
+
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            document.execCommand("copy");
+
+            document.body.removeChild(textarea);
+
+            alert("Table copied to clipboard in Excel format!");
+}
 
 

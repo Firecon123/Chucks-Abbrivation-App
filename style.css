@@ -41,6 +41,10 @@ select {
 .result{
     font-size: large;
     display: flex;
+    align-items: center;
+}
+.copyButton{
+    margin-left: 10px;
 }
 .add-new-button{
     display: flex;
@@ -51,8 +55,7 @@ select {
 .popup-container button {
     padding: 8px 16px; 
     font-size: 14px; 
-    width: fit-content;
-    margin-top: 100px; 
+    margin-top: 30px; 
 }
 
 /* Popup container */
@@ -67,11 +70,10 @@ select {
     border: 1px solid #ccc;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 25%;
-    height: 40%;
+    width: 200px;
+    height: 50%;
     overflow: auto;
     text-align: center;
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
 }
@@ -79,7 +81,7 @@ select {
 .popup-container label,
 .popup-container input {
     text-align: center;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 /* Styles for the overlay */
@@ -92,4 +94,49 @@ select {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 900;
+}
+.helpButtons button{
+    margin-top: 10px;
+    border: none;
+    background: none;
+    font-size: xx-large;
+}
+.copyButton:hover{
+    color: blue;
+}
+.listButton:hover{
+    color: rgb(255, 0, 0);
+}
+
+.tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    max-height: 0px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: blue;
+    color: #ffffff;
+} 
+.copyListButton{
+    margin-left: 10px;
+    border: none;
+    background: none;
+    font-size: large;
+    color: white;
+}
+.copyListButton:hover{
+    color: rgb(94, 255, 1);
 }

@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Style.css">
     <script src="path/to/jquery.min.js"></script>
     <script src="path/to/select2.min.js"></script>
@@ -10,11 +11,6 @@
     <header>Name Descriptor</header>
     <button id="popupButton">Add Something New</button>
     <label for="attribute_1">Select Product Type:</label>
-      <!-- <div class="add_new">
-    <label for="user_added_name">Add Your Name:</label>
-        <input type="text" id="user_added_name" maxlength="60">
-        <button onclick="addUserAddedName()">Add Name</button>
-    </div> -->
 
     <select id="opts" onchange="showForm()">
         <option value="0">Select Options</option>
@@ -27,6 +23,10 @@
 </head>
 <body>
     <div class="popup-container" id="popupContainer">
+        <label for="attribute_1">Select Which Category:</label>
+        <select name="selection" id="selection_menu">
+            <option value="">None</option>
+        </select>
         <label for="abbreviationInput">abbreviation:</label>
         <input type="abbreviation" id="abbreviationInput">
 
@@ -34,6 +34,7 @@
         <input type="fullName" id="fullNameInput">
 
         <button id="closePopup">Add</button>
+        <button id="exitPopup">Close Out</button>
     </div>
     <div id="f1" style="display:none">
         <form name="Yogurt">
@@ -274,7 +275,21 @@
             </label>
         </form>
     </div>
-    <div class="result" id="result">Selected Name: </div>
+    <div class="result" id="result">Selected Name:</div> 
+    <div class="helpButtons" id="helpButtons">
+        <button class="copyButton" id="copyButton" onclick="copyToClipboard()"><i class="fa fa-paste"></i></button>
+        <button class="listButton" id="listButton" onclick="generateTable()"><i class="fa fa-list"></i></button>
+    </div>
+    <table class="tableContainer" id="tableContainer" style="display:none">
+        <tr> 
+            <th>Size</th> 
+            <th>Name</th> 
+            <th>Type</th> 
+            <th>Description</th> 
+            <th>Flavor</th> 
+            <th>Selected Name <button class="copyListButton" id="copyListButton" onclick="copyToListClipboard()"><i class="fa fa-paste"></i></button></th>
+        </tr> 
+    </table>
     <script src="generator.js"></script>
 </body>
 </html>
