@@ -8,8 +8,9 @@
     <script src="path/to/jquery.min.js"></script>
     <script src="path/to/select2.min.js"></script>
     <title>Name Helper</title>
+    <img src="UpstateLogo.png" alt="Logo" class="logo">
     <header>Name Descriptor</header>
-    <button id="popupButton">Add Something New</button>
+    <button class="popupButton" id="popupButton">Add Something New</button>
     <label for="attribute_1">Select Product Type:</label>
 
     <select id="opts" onchange="showForm()">
@@ -25,7 +26,24 @@
     <div class="popup-container" id="popupContainer">
         <label for="attribute_1">Select Which Category:</label>
         <select name="selection" id="selection_menu">
-            <option value="">None</option>
+            <option value="IDK">I Don't Know</option>
+            <option value="Yogurt Size">Yogurt Size</option>
+            <option value="Yogurt Name">Yogurt Name</option>
+            <option value="Yogurt Type">Yogurt Type</option>
+            <option value="Yogurt Description">Yogurt Description</option>
+            <option value="Yogurt Flavor">Yogurt Flavor</option>
+            <option value="Cottage Size">Cottage Size</option>
+            <option value="Cottage Name">Cottage Name</option>
+            <option value="Cottage type">Cottage type</option>
+            <option value="Cottage Percent">Cottage Percent</option>
+            <option value="Cottage Flavor">Cottage Flavor</option>
+            <option value="Dip Size">Dip Size</option>
+            <option value="Dip Name">Dip Name</option>
+            <option value="Dip Flavor">Dip Flavor</option>
+            <option value="Sour Cream Size">Sour Cream Size</option>
+            <option value="Sour Cream Name">Sour Cream Name</option>
+            <option value="Sour Cream Type">Sour Cream Type</option>
+            <option value="Sour Cream Flavor">Sour Cream Flavor</option>
         </select>
         <label for="abbreviationInput">abbreviation:</label>
         <input type="abbreviation" id="abbreviationInput">
@@ -42,7 +60,6 @@
                 <label for="attribute_1">Select Size:</label>
                 <select name="attribute_1" id="size_yogurt" class="select2" onchange="updateResultYogurt()">
                     <option value="">None</option>
-                    <!-- <option class="yogurt_size_add"value="">+Add Something New</option> -->
                     <option value="4.4OZ">4.4 OZ</option>
                     <option value="4OZ">4 OZ</option>
                     <option value="5OZ">5 OZ</option>

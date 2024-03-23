@@ -13,7 +13,8 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column; 
+    flex-direction: column;
+    background-color: rgba(231, 231, 248, 0.671); 
 }
 
 header {
@@ -42,6 +43,14 @@ select {
     font-size: large;
     display: flex;
     align-items: center;
+}
+.popupButton{
+    border-color: rgb(172, 168, 168,0.4);
+    background: none;
+    font-size: x-small;
+}
+.popupButton:hover{
+    background: rgba(167, 167, 233, 0.2);
 }
 .copyButton{
     margin-left: 10px;
